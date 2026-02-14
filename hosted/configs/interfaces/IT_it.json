@@ -1,0 +1,103 @@
+{
+  "UI": {
+    "Title": "[AppName]",
+    "Buttons": {
+      "Create": "Nuovo",
+      "Search": "Cerca",
+      "Settings": "Impostazioni"
+    },
+    "Pages": {
+      "Create": {
+        "Labels": {
+          "NProt": "N Prot.:",
+          "NProtYear": "N Prot. Annuale:",
+          "State": "Stato:",
+          "Date": "Data:",
+          "Sender": "Mittente:",
+          "Receiver": "Destinatario:",
+          "Object": "Oggetto:",
+          "Files": "Allegati:"
+        },
+        "Buttons": {
+          "Save": "Salva"
+        }
+      },
+      "Search": {
+        "Labels": {
+          "NProt": "Numero Protocollo:",
+          "Prots": "Quantitá: [QntProts]",
+          "Table": {
+            "NProt": "N Prot.:",
+            "State": "Stato:",
+            "Date": "Data:",
+            "Sender": "Mittente:",
+            "Receiver": "Destinatario:",
+            "Object": "Oggetto:",
+            "Files": "Allegati:"
+          }
+        },
+        "Buttons": {
+          "Search": "Cerca",
+          "Reset": "Ripristina",
+          "WordSave": "Salva in word",
+          "Print": "Stampa"
+        },
+        "ChooseFile": {
+          "Title": "Scegli il file da aprire:",
+          "NProt": "N. Prot: [ProtocolNumber]",
+          "Column": "Percorsi"
+        }
+      },
+      "Settings": {
+        "Labels": {},
+        "Buttons": {
+          "OpenLogs": "Apri [LatestLogName]",
+          "ForceUpdate": "Aggiorna Adesso"
+        }
+      },
+      "Edit": {
+        "Labels": {
+          "NProt": "N Prot.:",
+          "NProtYear": "N Prot. Annuale:",
+          "State": "Stato:",
+          "Date": "Data:",
+          "Sender": "Mittente:",
+          "Receiver": "Destinatario:",
+          "Object": "Oggetto:",
+          "Files": "Allegati:"
+        },
+        "Buttons": {
+          "Edit": "Modifica"
+        }
+      },
+      "Update": {
+        "Title": "Un nuovo aggiornamento é pronto per essere installato. Vuoi installarlo?",
+        "Message": "Un nuovo aggiornamento é pronto per essere installato. Vuoi installarlo?",
+        "Buttons": {
+          "Close": "Chiudi",
+          "OK": "OK"
+        }
+      },
+      "Exceptions": {
+        "Labels": {
+          "ForceClose": "Sono presenti altre eccezioni. \nSei sicuro di voler chiudere l’applicazione?"
+        },
+        "Solution": {
+          "Title": "Soluzione",
+          "Buttons": {
+            "OK": "OK"
+          }
+        },
+        "Buttons": {
+          "Yes": "Si",
+          "No": "No",
+          "OK": "OK",
+          "Solution": "Soluzione",
+          "Logs": "Logs",
+          "Close": "Chiudi [AppName]",
+          "Resolve": "Risolvi"
+        }
+      }
+    }
+  }
+}

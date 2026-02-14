@@ -1,0 +1,192 @@
+{
+  "States": {
+    "Sent": "Spedita",
+    "Received": "Ricevuta"
+  },
+  "WordFile": {
+    "Table": {
+      "Columns": {
+        "NProt": "N Prot.:",
+        "State": "Stato:",
+        "Date": "Data:",
+        "Sender": "Mittente:",
+        "Receiver": "Destinatario:",
+        "Object": "Oggetto:"
+      }
+    }
+  },
+  "Exceptions": {
+    "FileLoader": {
+      "TypeMismatch": {
+        "Title": "Il tipo di file fornito non é quello aspettato",
+        "Message": "Il file [FilePath] non è del tipo previsto. Si attendeva un file di tipo [ExpectedType], ma è stato fornito un file di tipo [ActualType].",
+        "Solution": "Verificare che il file fornito sia del tipo corretto e riprovare.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "AssignError": {
+        "Title": "Errore durante l'assegnazione del file",
+        "Message": "Si è verificato un errore durante l'assegnazione del file [FilePath]. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare che il file sia accessibile e non corrotto. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "FileNotFound": {
+        "Title": "File non trovato nell'update",
+        "Message": "Il file [FilePath] non è stato trovato. Si prega di verificare che il percorso del file sia corretto.",
+        "Solution": "Controllare il percorso del file e assicurarsi che il file esista. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      }
+    },
+    "Database": {
+      "UnknownType": {
+        "Title": "Tipo di database sconosciuto",
+        "Message": "Il tipo di database specificato '[DBType]' non è riconosciuto. Si prega di verificare la configurazione del database. Verrà utilizzato il database SQLite come predefinito.",
+        "Solution": "Controllare la configurazione del database e assicurarsi che il tipo di database sia corretto. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "WARN"
+      },
+      "UnableToConnect": {
+        "Title": "Impossibile connettersi al database",
+        "Message": "Si è verificato un errore durante il tentativo di connessione al database. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare le credenziali di connessione e lo stato del server del database. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "SelectionError": {
+        "Title": "Errore durante l'esecuzione della query SELECT",
+        "Message": "Si è verificato un errore durante l'esecuzione della query SELECT sul database. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare la sintassi della query e lo stato del database. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "InsertError": {
+        "Title": "Errore durante l'esecuzione della query INSERT",
+        "Message": "Si è verificato un errore durante l'esecuzione della query INSERT sul database. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare la sintassi della query e lo stato del database. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "UpdateError": {
+        "Title": "Errore durante l'esecuzione della query UPDATE",
+        "Message": "Si è verificato un errore durante l'esecuzione della query UPDATE sul database. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare la sintassi della query e lo stato del database. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "DeleteError": {
+        "Title": "Errore durante l'esecuzione della query DELETE",
+        "Message": "Si è verificato un errore durante l'esecuzione della query DELETE sul database. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare la sintassi della query e lo stato del database. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      }
+    },
+    "Serializer": {
+      "DateError": {
+        "Title": "Errore durante la deserializzazione della data",
+        "Message": "Si è verificato un errore durante la deserializzazione della data [DateString]. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare che la stringa della data sia nel formato corretto e riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "ProtocolNumberError": {
+        "Title": "Errore durante la deserializzazione del numero di protocollo",
+        "Message": "Si è verificato un errore durante la deserializzazione del numero di protocollo. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare che i dati del numero di protocollo siano corretti ([Excepted]) e riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "PropertyNull": {
+        "Title": "Proprietà null durante la deserializzazione",
+        "Message": "Si è verificato un errore durante la deserializzazione a causa, la proprietà [PropertyName] è risultata null.",
+        "Solution": "Verificare che i dati forniti siano completi e riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "ProtocolExists": {
+        "Title": "Il protocollo esiste già.",
+        "Message": "Il protocollo con numero [ProtocolNumber] esiste già.",
+        "Solution": "Cambiare il numero di protocollo e riprova.\nContattare uno fra [Devs]",
+        "Severity": "INFO"
+      }
+    },
+    "Files": {
+      "CopyError": {
+        "Title": "Errore durante la copia del file",
+        "Message": "Si è verificato un errore durante la copia del file da [SourcePath] a [DestinationPath]. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare che i percorsi di origine e destinazione siano corretti e accessibili. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "OpenError": {
+        "Title": "Errore durante l'apertura del file",
+        "Message": "Si è verificato un errore durante l'apertura del file [FilePath]. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare che il file esista e sia accessibile. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "PrintError": {
+        "Title": "Errore durante la stampa del file",
+        "Message": "Si è verificato un errore durante la stampa del file [FilePath]. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare che la stampante sia correttamente configurata e accessibile. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "DownloadError": {
+        "Title": "Errore di durante il download del file",
+        "Message": "Si è verificato un errore di I/O durante il download del file da [URL] a [DestinationPath]. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare la connessione di rete e i permessi di scrittura nella destinazione. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "ErrorWhileReadingImage": {
+        "Title": "Errore durante la lettura dell'immagine",
+        "Message": "Un errore è occorso durante la lettura dell'immagine [ImagePath]. Si prega di verificare che l'immagine sia valida e riprovare.",
+        "Solution": "Controllare che il file immagine non sia corrotto e che sia in un formato supportato (es. JPG, PNG, ICO).",
+        "Severity": "WARN"
+      },
+      "ErrorWhileReadingZIP": {
+        "Title": "Errore durante la lettura del file ZIP",
+        "Message": "Un errore è occorso durante la lettura del file ZIP [ZIPPath]. Si prega di verificare che il file ZIP sia valido e riprovare.",
+        "Solution": "Controllare che il file ZIP non sia corrotto e che sia in un formato supportato.",
+        "Severity": "WARN"
+      },
+      "ErrorWhileReadingFile": {
+        "Title": "Errore durante la lettura del file",
+        "Message": "Un errore è occorso durante la lettura del file [FilePath]. Si prega di verificare che il file sia valido e riprovare.",
+        "Solution": "Controllare che il file non sia corrotto e che sia in un formato supportato.",
+        "Severity": "WARN"
+      },
+      "ErrorWhileWritingFile": {
+        "Title": "Errore durante la scrittura del file",
+        "Message": "Un errore è occorso durante la scrittura del file [FilePath]. Si prega di verificare che il percorso di destinazione sia valido e riprovare.",
+        "Solution": "Controllare che il percorso di destinazione sia accessibile e che ci siano i permessi di scrittura necessari.",
+        "Severity": "WARN"
+      }
+    },
+    "Updater": {
+      "ErrorWhileUpdating": {
+        "Title": "Errore durante l'aggiornamento dell'applicazione",
+        "Message": "Si è verificato un errore durante l'aggiornamento dell'applicazione alla versione [Version]. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare la connessione di rete e lo spazio disponibile sul disco. Riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "UnableToRetrieveRemoteVersion": {
+        "Title": "Impossibile recuperare l'ultima versione disponibile",
+        "Message": "Si è verificato un errore durante il tentativo di recuperare l'ultima versione disponibile dell'applicazione. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare la connessione di rete e riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      },
+      "UnableToRetrieveLocalVersion": {
+        "Title": "Impossibile recuperare l'ultima versione attuale",
+        "Message": "Si è verificato un errore durante il tentativo di recuperare l'ultima versione attuale dell'applicazione. Dettagli dell'errore: [Message].",
+        "Solution": "Verificare che il file 'versions.json' sia valido e riprovare l'operazione.\nContattare uno fra [Devs]",
+        "Severity": "ERROR"
+      }
+    },
+    "ObjectIsNull": {
+      "Title": "Un oggetto identificato come NotNull è null",
+      "Message": "Si è verificato un errore perché l'oggetto [Name] è null.\n Dettagli dell'errore: [Message].",
+      "Solution": "Verificare che l'oggetto sia stato correttamente inizializzato prima dell'uso.\nContattare uno fra [Devs]",
+      "Severity": "ERROR"
+    },
+    "ProtocolNotExists": {
+      "Title": "Il protocollo non esiste.",
+      "Message": "Il protocollo con numero [ProtocolNumber] non esiste.",
+      "Solution": "Verificare il numero di protocollo e riprova.\nContattare uno fra [Devs]",
+      "Severity": "INFO"
+    },
+    "CannotAutoResolve": {
+      "Title": "Impossibile risolvere automaticamente il problema",
+      "Message": "Il sistema non è riuscito a risolvere automaticamente il problema riscontrato. Si prega di intervenire manualmente.",
+      "Solution": "Verificare i dettagli del problema e adottare le misure necessarie per risolverlo.\nContattare uno fra [Devs]",
+      "Severity": "WARN"
+    }
+  }
+}

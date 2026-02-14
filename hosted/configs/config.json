@@ -1,0 +1,82 @@
+{
+  "Settings": {
+    "IconName": "icon.png",
+    "Language": "IT_it",
+    "DateFormat": "dd.MM.yyyy",
+    "TimeFormat": "hh-mm-ss",
+    "DefEmail": "mazara@fedelambiente.it",
+    "Screen": {
+      "Width": "auto",
+      "Height": "auto"
+    },
+    "Logging": {
+      "Debug": true,
+      "Backups": {
+        "Enable": true,
+        "Path": "[Current]\\logs\\backups",
+        "FileName": "[Date]-[Time].zip"
+      }
+    },
+    "Saving": {
+      "Choose": true,
+      "ValidChoose": "Folder",
+      "DefaultPath": "[Desktop]",
+      "DefaultName": "protocols.docx"
+    }
+  },
+  "Updates": {
+    "AutoUpdate": true,
+    "CheckEvery": 60.0,
+    "CheckDevs": false
+  },
+  "Database": {
+    "Type": "SQLite",
+    "Path": "[Current]/saves.db",
+    "Port": 3306.0,
+    "Host": "127.0.0.1",
+    "User": "litterae",
+    "Name": "litterae",
+    "Pass": "super-secure-password",
+    "Encrypting": {
+      "Enable": false,
+      "Key": ""
+    }
+  },
+  "WordFile": {
+    "ColumnsSize": {
+      "NProt": 1000.0,
+      "State": 1200.0,
+      "Date": 1200.0,
+      "Sender": 3000.0,
+      "Receiver": 3000.0,
+      "Object": 4000.0
+    }
+  },
+  "Shortcuts": {
+    "Pages": {
+      "Create": {
+        "Change": "DIGIT1",
+        "InsertEmail": "F1",
+        "Save": "ENTER"
+      },
+      "View": {
+        "Change": "DIGIT2",
+        "Search": "ENTER",
+        "Edit": "SPACE",
+        "Print": "P",
+        "Restore": "ESCAPE",
+        "Save": "S",
+        "FocusOnProtNumber": "TAB"
+      },
+      "Settings": {
+        "Change": "DIGIT3",
+        "Update": "U",
+        "OpenLogs": "ENTER"
+      },
+      "Edit": {
+        "Edit": "ENTER",
+        "InsertEmail": "F1"
+      }
+    }
+  }
+}
