@@ -1,4 +1,9 @@
 {
+  "__metadata__": {
+    "name": "config",
+    "type": "config",
+    "version": "1.0.0"
+  },
   "Settings": {
     "IconName": "icon.png",
     "Language": "IT_it",
