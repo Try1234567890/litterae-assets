@@ -1,0 +1,32 @@
+.root {
+    -fx-background-color: #fffdf2;
+    -fx-padding: 20;
+}
+
+.label.title-label {
+    -fx-text-fill: #856404;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.label {
+    -fx-text-fill: #5d4037;
+}
+
+.separator {
+    -fx-background-color: #ffe082;
+}
+
+.button {
+    -fx-background-color: #fff9c4;
+    -fx-text-fill: #7f6d00;
+}
+
+.button:hover {
+    -fx-background-color: #fff59d;
+}
+
+.btn-close-app {
+    -fx-background-color: #5d4037;
+    -fx-text-fill: white;
+}
